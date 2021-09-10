@@ -46,7 +46,7 @@ public class MedicamentoController {
 	}
 	
 	@GetMapping("/stock/{param_stock}")
-	@ResponseBody //return json code
+	@ResponseBody 
 	public ResponseEntity<List<Medicamento>> buscarPorStock(@PathVariable("param_stock") int stock ){
 		List<Medicamento> lista = service.buscarPorStock(stock);
 		if(CollectionUtils.isEmpty(lista)) {

@@ -21,7 +21,6 @@ public interface MedicamentoService {
 		//It's the method's return		    Input/The user enter id
 	public Optional<Medicamento> buscarPorId( int idMedicamento );
 	
-	@Query("select * from medicamento m where m.nombre like: param_nombre")
 	public abstract List<Medicamento> buscarPorNombre( String nombre );
 	
 	public abstract List<Medicamento> buscarPorStock( int stock );
