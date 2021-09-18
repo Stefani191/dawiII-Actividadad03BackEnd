@@ -33,4 +33,16 @@ public class MedicamentoServicelmpl implements MedicamentoService{
 		return repository.findByStock(stock);
 	}
 
+	@Override
+	public List<Medicamento> listadoMedicamentos() {
+		// TODO Auto-generated method stub
+		return repository.findAll();
+	}
+
+	@Override
+	public Medicamento registroMedicamento(Medicamento obj) {
+		// TODO Auto-generated method stub
+		return repository.save(obj);
+	}
+
 }

@@ -24,5 +24,9 @@ public interface MedicamentoService {
 	public abstract List<Medicamento> buscarPorNombre( String nombre );
 	
 	public abstract List<Medicamento> buscarPorStock( int stock );
+	
+	public abstract List<Medicamento> listadoMedicamentos();
+	
+	public abstract Medicamento registroMedicamento(Medicamento obj);
 
 }
